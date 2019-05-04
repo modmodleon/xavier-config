@@ -1,0 +1,26 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://eureka-dev.com:7001/eureka
+---
+server:
+    port: 8202
+spring:
+    profiles: test
+    application:
+        name: xavier-config-client
+eureka:
+    client:
+        service-url:
+            defaultZone: http://eureka-dev.com:7001/eureka
+---
+server:
+    port: 8201
+spring:
+    profiles: dev
+    application:
+        name: xavier-config-client
+eureka:
+    client:
+        service-url:
+            defaultZone: http://eureka-dev.com:7001/eureka
